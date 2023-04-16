@@ -1,37 +1,79 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
-}
-
+/* Overall page styles */
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-button {
-  font-size: 7px;
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 50px 0;
 }
 
-#main-content {
-  position: relative;
+/* Task list styles */
+#task-list {
+  margin: 0 auto;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+#task-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#task-items li {
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#task-items li:last-child {
+  border-bottom: none;
+}
+
+/* Input form styles */
+#input-form {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
 }
 
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+label {
+  font-size: 20px;
+  margin-right: 10px;
 }
+
+input[type="text"] {
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+}
+
+ 
